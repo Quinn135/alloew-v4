@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .btn-menu{
+    @apply bg-gray-700 hover:border-blue-600
+    active:border-blue-700;
+  }
+  .btn-primary{
+    @apply bg-blue-600 hover:bg-blue-700 active:bg-blue-800;
+  }
+  .btn{
+    @apply px-6 py-2 rounded mx-1 my-2
+    transition-all duration-200 text-white;
+  }
+  h1{
+    @apply text-7xl text-white;
+  }
+  h2{
+    @apply text-5xl
+  }
+  h3{
+    @apply text-3xl text-white;
+  }
+  h4{
+    @apply text-xl text-white;
+  }
+  a{
+    @apply text-blue-500;
+  }
+  ::selection{
+    @apply bg-black text-white;
+  }
+}
+
+.btn-menu{
+  border-bottom-width: 6px;
+}
