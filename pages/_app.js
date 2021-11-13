@@ -2,34 +2,13 @@ import 'tailwindcss/tailwind.css'
 import '../public/styles/globals.css'
 import Link from 'next/link'
 import Head from "next/head";
+import { useRouter } from 'next/router';
 import { FaHome, FaGamepad, FaStoreAlt, FaAlignLeft } from 'react-icons/fa'
 
 function MyApp({ Component, pageProps }) {
-  [ {
-  "@context" : "http://schema.org",
-  "@type" : "LocalBusiness",
-  "name" : "Alloew",
-  "image" : "https://alloew.com/images/alloew.png",
-  "url" : "https://alloew.com/"
-}, {
-  "@context" : "http://schema.org",
-  "@type" : "LocalBusiness",
-  "name" : "Alloew",
-  "image" : "https://alloew.com/images/alloew.png",
-  "url" : "https://alloew.com/games"
-}, {
-  "@context" : "http://schema.org",
-  "@type" : "LocalBusiness",
-  "name" : "Alloew",
-  "image" : "https://alloew.com/images/alloew.png",
-  "url" : "https://alloew.com/store"
-}, {
-  "@context" : "http://schema.org",
-  "@type" : "LocalBusiness",
-  "name" : "Alloew",
-  "image" : "https://alloew.com/images/alloew.png",
-  "url" : "https://alloew.com/other"
-} ]
+
+  const router = useRouter();
+
   return (
     <main
       style={{'backgroundColor': '#100c24',}}
@@ -63,22 +42,26 @@ function MyApp({ Component, pageProps }) {
       justify-center sticky top-0 shadow-2xl items-center">
         <a></a>
         <Link href="/">
-        <a className="btn-menu btn">
+          <a
+          className={router.pathname == "/" ? "active btn btn-menu" : "btn btn-menu"}>
           <FaHome size="32" />
         </a>
         </Link>
         <Link href="/games">
-        <a className="btn-menu btn">
+          <a
+          className={router.pathname == "/games" ? "active btn btn-menu" : "btn btn-menu"}>
           <FaGamepad size="32" />
         </a>
         </Link>
         <Link href="/store">
-        <a className="btn-menu btn">
+          <a
+          className={router.pathname == "/store" ? "active btn btn-menu" : "btn btn-menu"}>
           <FaStoreAlt size="32" />
           </a>
         </Link>
         <Link href="/other">
-        <a className="btn-menu btn">
+          <a
+          className={router.pathname == "/other" ? "active btn btn-menu" : "btn btn-menu"}>
           <FaAlignLeft size="32" />
         </a>
         </Link>

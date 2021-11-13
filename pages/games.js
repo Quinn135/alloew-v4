@@ -30,6 +30,11 @@ export default function Turboman() {
           <button></button>
           <button
             className="btn-primary btn"
+            onClick={() => TBV("V1.0S5", "V1.0 Snapshot 5")}>
+            V1.0S5
+          </button>
+          <button
+            className="btn-primary btn"
             onClick={() => TBV("V1.0S4.1", "V1.0 Snapshot 4.1")}>
             V1.0S4.1
           </button>
