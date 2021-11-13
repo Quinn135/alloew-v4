@@ -5,6 +5,31 @@ import Head from "next/head";
 import { FaHome, FaGamepad, FaStoreAlt, FaAlignLeft } from 'react-icons/fa'
 
 function MyApp({ Component, pageProps }) {
+  [ {
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Alloew",
+  "image" : "https://alloew.com/images/alloew.png",
+  "url" : "https://alloew.com/"
+}, {
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Alloew",
+  "image" : "https://alloew.com/images/alloew.png",
+  "url" : "https://alloew.com/games"
+}, {
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Alloew",
+  "image" : "https://alloew.com/images/alloew.png",
+  "url" : "https://alloew.com/store"
+}, {
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Alloew",
+  "image" : "https://alloew.com/images/alloew.png",
+  "url" : "https://alloew.com/other"
+} ]
   return (
     <main
       style={{'backgroundColor': '#100c24',}}
@@ -14,6 +39,24 @@ function MyApp({ Component, pageProps }) {
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="description"
+          content="This is alloew! A place where us and our friends make things for fun!"
+        />
+        <meta property="og:title" content="Alloew!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://Alloew.com/" />
+        <meta property="og:image" content="https://alloew.com/alloew.png" />
+        <meta property="og:description" content="This is alloew! A place where us and our friends make things for fun!" />
+        <meta name="theme-color" content="#2315bf" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+        <link rel="manifest" href="../site.webmanifest" />
         <link rel="manifest" href="../site.webmanifest" />
       </Head>
       <nav className="flex flex-wrap w-full bg-gray-900

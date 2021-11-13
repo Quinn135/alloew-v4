@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 function Image(props) {
   return (
     <div className="border text-center flex flex-col
@@ -11,6 +13,12 @@ function Image(props) {
           style={{ 'height': '80vh' }}
       ></img>
       <br />
+      <a className="btn btn-tertiary"
+        href={"../images/" + props.src}
+        download>
+        Download
+      </a>
+      <br />
     </div>
   )
 }
@@ -19,6 +27,9 @@ export default function Store() {
   return (
     <div className="flex flex-col bg-gray-900
     items-center justify-center text-center py-2">
+      <Head>
+        <title>Store on Alloew!</title>
+      </Head>
       <h1>Welcome to the store!</h1>
       <h5>Here, we sell images that my friends have made (For free!)</h5>
       <br />

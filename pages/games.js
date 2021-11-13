@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export default function Turboman() {
   function TBV(Version, Title) {
     document.getElementById("Turboman").src = "../Turboman/" + Version + "/index.html";
@@ -6,6 +8,9 @@ export default function Turboman() {
   return (
     <div className="flex flex-col bg-gray-900
     items-center justify-center py-2">
+      <Head>
+        <title>Games on Alloew!</title>
+      </Head>
       <h1>Games!</h1>
       <br />
       <div className="flex flex-col border rounded-lg
