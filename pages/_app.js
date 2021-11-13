@@ -44,8 +44,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="This is alloew! A place where us and our friends make things for fun!"
+          content="This is alloew! A place where us and our friends make things for fun! So far, we have Turboman, and more games are coming! We have also started a blog, and I am working on all the technical stuff behind the scenes. Have Fun!!"
         />
+        <meta name="" />
         <meta property="og:title" content="Alloew!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://alloew.com/" />
