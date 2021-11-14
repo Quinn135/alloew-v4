@@ -14,7 +14,7 @@ export default function Turboman() {
       <h1>Games!</h1>
       <br />
       <div className="flex flex-col border rounded-lg
-      items-center justify-center py-2">
+      items-center justify-center py-2 border-gray-500">
         <h3 id="Version">Turboman B1.1.1!</h3>
         <iframe
           id="Turboman"
@@ -23,8 +23,9 @@ export default function Turboman() {
       </div>
       <br />
       <details className="text-center bg-gray-800
-        w-11/12 rounded text-white">
-        <summary className="text-2xl">Versions (Click)</summary>
+        w-11/12 rounded-lg text-white p-3
+        border-gray-500 border">
+        <summary>Versions (Click)</summary>
         <div className="flex space-y-1 justify-center flex-row
         flex-wrap space-x-2 p-2">
           <button></button>
@@ -113,7 +114,7 @@ export default function Turboman() {
       <br />
       <iframe
         style={{ 'height': '90vh', 'width': '90vw', }}
-        className="rounded-lg"
+        className="rounded-lg border-gray-500 border"
         src={"https://deadsimplechat.com/kM-pjLD77"}>
       </iframe>
     </div>
