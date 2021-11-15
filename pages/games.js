@@ -13,18 +13,20 @@ export default function Turboman() {
       </Head>
       <h1>Games!</h1>
       <br />
-      <div className="flex flex-col border rounded-lg
-      items-center justify-center py-2 border-gray-500">
+      <details className="border-gray-500 border
+      rounded-lg p-3 text-center w-11/12">
+        <summary>Turboman</summary>
+      <div className="flex flex-col
+      items-center justify-center py-2">
         <h3 id="Version">Turboman B1.1.1!</h3>
         <iframe
           id="Turboman"
-          style={{ 'height': '90vh', 'width': '90vw', }}
+          style={{ 'width': '90vw', 'height': '70vh', }}
           src={"../Turboman/B1.1.1/index.html"} />
-      </div>
-      <br />
-      <details className="text-center bg-gray-800
-        w-11/12 rounded-lg text-white p-3
-        border-gray-500 border">
+        </div>
+        <details className="text-center
+        rounded-lg text-white p-3 m-auto
+        border-gray-500 border w-11/12">
         <summary>Versions (Click)</summary>
         <div className="flex space-y-1 justify-center flex-row
         flex-wrap space-x-2 p-2">
@@ -111,12 +113,19 @@ export default function Turboman() {
           </button>
         </div>
         </details>
+      </details>
       <br />
+      <br />
+      <details className="border-gray-500 border
+      rounded-lg p-3 text-center w-11/12">
+        <summary>Chat</summary>
+        <br />
       <iframe
-        style={{ 'height': '90vh', 'width': '90vw', }}
-        className="rounded-lg border-gray-500 border"
+        style={{ 'height': '90vh', 'width': '100%', }}
+        className="rounded-lg m-auto"
         src={"https://deadsimplechat.com/kM-pjLD77"}>
       </iframe>
+      </details>
     </div>
   )
 }

@@ -26,11 +26,14 @@ export default function Other() {
       <br />
       <div className="border-t border-gray-500 w-full"></div>
       <br />
+      <details className="border-gray-500 border
+      rounded-lg p-3 text-center w-11/12">
+        <summary>Blog 11/12/21</summary>
       <div className="flex flex-col justify-center
-      text-left p-3 items-center">
-        <h3 className="text-center">Blog 11/12/21</h3>
-        <p className="sm:w-1/3 w-2/3 ">&emsp;&emsp;Lets talk about this website. I coded it from scratch, and this is the fourth, and I think final version of the website. If you have any suggestions for the website, and things that should be added, just email me with the link below. Thanks!</p>
+      text-left items-center">
+        <p className="sm:w-1/3 w-2/3 ">&emsp;&emsp;This is definitely a real blog.</p>
       </div>
+      </details>
       <br />
       <div className="border-t border-gray-500 w-full"></div>
       <h4>Contact me : </h4>

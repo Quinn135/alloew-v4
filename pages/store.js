@@ -2,9 +2,9 @@ import Head from "next/head";
 
 function Image(props) {
   return (
-    <div className="border text-center flex flex-col
+    <div className="text-center flex flex-col
     justify-center items-center p-3 rounded-lg w-5/6
-    m-auto bg-gray-900 border-gray-500 mb-4 mt-4">
+    m-auto bg-gray-900 mb-4 mt-4">
         <h3>{props.name}</h3>
       <h4>By : {props.creator}</h4>
       <br />
@@ -35,8 +35,8 @@ export default function Store() {
       <h4>Here, we sell images that my friends have made (For free!)</h4>
       <br />
 
-      <details className="bg-gray-800 border-gray-500
-      w-11/12 border rounded-lg p-3">
+      <details className="border-gray-500 w-11/12
+      border rounded-lg p-3" style={{ 'max-width': '91.6666667%'}}>
         <summary>Homer Simpsons (Click)</summary>
       <Image name="Colored Homer" src="Colored Homer.png"
         creator="Jacob" />
