@@ -18,11 +18,11 @@ export default function Turboman() {
         <summary>Turboman</summary>
       <div className="flex flex-col
       items-center justify-center py-2">
-        <h3 id="Version">Turboman B1.1.1!</h3>
+        <h3 id="Version">Turboman V1.0 Snapshot 5!</h3>
         <iframe
           id="Turboman"
           style={{ 'width': '90vw', 'height': '70vh', }}
-          src={"../Turboman/B1.1.1/index.html"} />
+          src={"../Turboman/V1.0S5/index.html"} />
         </div>
         <details className="text-center
         rounded-lg text-white p-3 m-auto
@@ -116,16 +116,6 @@ export default function Turboman() {
       </details>
       <br />
       <br />
-      <details className="border-gray-500 border
-      rounded-lg p-3 text-center w-11/12">
-        <summary>Chat</summary>
-        <br />
-      <iframe
-        style={{ 'height': '90vh', 'width': '100%', }}
-        className="rounded-lg m-auto"
-        src={"https://deadsimplechat.com/kM-pjLD77"}>
-      </iframe>
-      </details>
     </div>
   )
 }

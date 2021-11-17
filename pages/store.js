@@ -4,7 +4,7 @@ function Image(props) {
   return (
     <div className="text-center flex flex-col
     justify-center items-center p-3 rounded-lg w-5/6
-    m-auto bg-gray-900 mb-4 mt-4">
+    m-auto mb-4 mt-4">
         <h3>{props.name}</h3>
       <h4>By : {props.creator}</h4>
       <br />
@@ -20,6 +20,7 @@ function Image(props) {
         Download
       </a>
       <br />
+      <div className="border-t border-gray-300 w-full"></div>
     </div>
   )
 }

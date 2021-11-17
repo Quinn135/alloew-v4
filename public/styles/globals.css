@@ -44,6 +44,9 @@
   ::selection{
     @apply bg-black text-white;
   }
+  details{
+    @apply bg-gray-800;
+  }
 }
 
 .btn-menu{
