@@ -6,7 +6,7 @@ export default function Turboman() {
     document.getElementById("Version").innerHTML = "Turboman " + Title + "!";
   }
   return (
-    <div className="flex flex-col bg-gray-900
+    <div className="flex flex-col dark:bg-gray-900 bg-gray-100
     items-center justify-center py-2">
       <Head>
         <title>Games on Alloew!</title>
@@ -114,8 +114,6 @@ export default function Turboman() {
         </div>
         </details>
       </details>
-      <br />
-      <br />
     </div>
   )
 }

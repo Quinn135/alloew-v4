@@ -4,15 +4,21 @@ import Link from 'next/link'
 import Head from "next/head";
 import { useRouter } from 'next/router';
 import { FaHome, FaGamepad, FaStoreAlt, FaAlignLeft } from 'react-icons/fa'
+import { HtmlContext } from 'next/dist/shared/lib/utils';
 
 function MyApp({ Component, pageProps }) {
 
   const router = useRouter();
 
+  function darkModeToggle() {
+    document.getElementById("main").classList.toggle("dark")
+    document.getElementById("main").classList.toggle("bg-blue-navy")
+    document.getElementById("main").classList.toggle("bg-gray-400")
+  }
+
   return (
     <main
-      style={{'backgroundColor': '#100c24',}}
-      className="text-white min-h-screen">
+      className="dark min-h-screen bg-blue-navy" id="main">
       <Head>
         <title>Alloew.com</title>
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
@@ -38,8 +44,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
         <link rel="manifest" href="../site.webmanifest" />
       </Head>
-      <nav className="flex flex-wrap w-full bg-gray-900
-      justify-center sticky top-0 shadow-2xl items-center">
+      <nav className="flex flex-wrap w-full dark:bg-gray-900
+      justify-center sticky top-0 shadow-2xl items-center
+      bg-gray-100">
         <a></a>
         <Link href="/">
           <a
@@ -66,6 +73,19 @@ function MyApp({ Component, pageProps }) {
         </a>
         </Link>
         <a></a>
+        <span className="font-semibold absolute right-32">Dark</span>
+        <input id="darkmode" type="checkbox"
+          className="hidden" onChange={darkModeToggle} />
+        <label for="darkmode" className="cursor-pointer
+        bg-gray-400 dark:bg-black rounded-full absolute
+        right-14">
+          <div className="w-16 h-6 m-auto">
+            <div className="check transition-all duration-300
+            rounded-full w-6 h-6 bg-white dark:bg-gray-700">
+            </div>
+          </div>
+        </label>
+        <span className="font-extralight absolute right-3">Light</span>
         </nav>
 
         <Component {...pageProps} />

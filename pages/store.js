@@ -27,7 +27,7 @@ function Image(props) {
 
 export default function Store() {
   return (
-    <div className="flex flex-col bg-gray-900
+    <div className="flex flex-col dark:bg-gray-900 bg-gray-100
     items-center justify-center text-center py-2">
       <Head>
         <title>Store on Alloew!</title>

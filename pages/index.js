@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-gray-900
+    <div className="flex flex-col dark:bg-gray-900 bg-gray-100
     items-center justify-center text-center
     py-2">
       <Head>
@@ -13,7 +13,8 @@ export default function Home() {
       <h4>A website where me and my friends make things for fun!</h4>
       <br />
       <div className="rounded-lg border w-2/3 text-center
-      justify-center p-2 border-gray-500" style={{ 'min-height': '8rem', }}>
+      justify-center p-2 border-gray-500 dark:bg-gray-800
+      bg-gray-300" style={{ 'min-height': '8rem', }}>
         <div className="p-2 border-b border-gray-500">
           <h3>New revamped website!</h3>
           <div className="inline-flex items-center">

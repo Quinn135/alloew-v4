@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Other() {
   return (
-    <div className="flex flex-col bg-gray-900
+    <div className="flex flex-col dark:bg-gray-900 bg-gray-100
     items-center justify-center
     py-2">
       <Head>
